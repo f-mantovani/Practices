@@ -6,4 +6,4 @@ This is a folder for me to store some of the practices i'll be making during my 
 
 ###### This will be a growing list
 
-- CSS Grid [Tutorial by Traversy Medie](https://www.youtube.com/watch?v=moBhzSC455o&ab_channel=TraversyMedia)
+- CSS Grid [Tutorial by Traversy Media](https://www.youtube.com/watch?v=moBhzSC455o&ab_channel=TraversyMedia)
