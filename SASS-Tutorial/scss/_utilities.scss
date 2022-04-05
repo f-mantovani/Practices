@@ -1,0 +1,36 @@
+.container {
+  max-width: 68.75rem;
+  padding: 0 2em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+// Margin & padding classes
+
+$spaceamounts : (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}em;
+  }
+
+  .my-#{$space} {
+    margin: #{$space}em 0;
+  }
+
+  .mx-#{$space} {
+    margin: 0 #{$space}em;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}em;
+  }
+
+  .px-#{$space} {
+    padding: 0 #{$space}em;
+  }
+
+  .py-#{$space} {
+    padding:  #{$space}em 0;
+  }
+}

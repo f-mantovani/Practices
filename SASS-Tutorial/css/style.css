@@ -1,0 +1,241 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  background-color: #0e6cff;
+  color: white;
+  min-height: 37.5rem;
+}
+
+.showcase nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.showcase nav li {
+  padding: 1em;
+}
+
+.showcase nav a:hover {
+  color: #ff8700;
+}
+
+.showcase a {
+  color: white;
+}
+
+.showcase-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+
+.showcase-content img {
+  max-width: 50%;
+}
+
+.showcase-content h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    height: 25rem;
+  }
+  .showcase-content {
+    text-align: center;
+  }
+  .showcase-content img {
+    display: none;
+  }
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: .5em 1.25em;
+  margin: 3px;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #418bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+  color: white;
+}
+
+.container {
+  max-width: 68.75rem;
+  padding: 0 2em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.m-1 {
+  margin: 1em;
+}
+
+.my-1 {
+  margin: 1em 0;
+}
+
+.mx-1 {
+  margin: 0 1em;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.px-1 {
+  padding: 0 1em;
+}
+
+.py-1 {
+  padding: 1em 0;
+}
+
+.m-2 {
+  margin: 2em;
+}
+
+.my-2 {
+  margin: 2em 0;
+}
+
+.mx-2 {
+  margin: 0 2em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.px-2 {
+  padding: 0 2em;
+}
+
+.py-2 {
+  padding: 2em 0;
+}
+
+.m-3 {
+  margin: 3em;
+}
+
+.my-3 {
+  margin: 3em 0;
+}
+
+.mx-3 {
+  margin: 0 3em;
+}
+
+.p-3 {
+  padding: 3em;
+}
+
+.px-3 {
+  padding: 0 3em;
+}
+
+.py-3 {
+  padding: 3em 0;
+}
+
+.m-4 {
+  margin: 4em;
+}
+
+.my-4 {
+  margin: 4em 0;
+}
+
+.mx-4 {
+  margin: 0 4em;
+}
+
+.p-4 {
+  padding: 4em;
+}
+
+.px-4 {
+  padding: 0 4em;
+}
+
+.py-4 {
+  padding: 4em 0;
+}
+
+.m-5 {
+  margin: 5em;
+}
+
+.my-5 {
+  margin: 5em 0;
+}
+
+.mx-5 {
+  margin: 0 5em;
+}
+
+.p-5 {
+  padding: 5em;
+}
+
+.px-5 {
+  padding: 0 5em;
+}
+
+.py-5 {
+  padding: 5em 0;
+}
