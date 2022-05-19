@@ -6,12 +6,18 @@ import routes from './src/routes/crmRoutes';
 
 
 const app = express();
-// number type
 const PORT: number = 3000;
-
-// string
 const database: string = process.env.MONGO_URI
 
+const testUser: string = "User Test 010203"
+const testPassword: string = "Password123"
+
+const testConnection = (user: string, pass: string): string => {
+    return ` ${user} has this pass ${pass} `
+}
+
+let test = testConnection(testUser, testPassword)
+console.log(test)
 
 // mongoose connection
 mongoose.connect(database);
