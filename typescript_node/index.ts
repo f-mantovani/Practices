@@ -3,21 +3,21 @@ import * as mongoose from 'mongoose';
 import 'dotenv/config'
 import * as bodyParser from 'body-parser';
 import routes from './src/routes/crmRoutes';
-
+import Messenger from './src/controllers/createMessage';
+import { Settings } from './settings'
 
 const app = express();
-const PORT: number = 3000;
 const database: string = process.env.MONGO_URI
-
-const testUser: string = "User Test 010203"
-const testPassword: string = "Password123"
 
 const testConnection = (user: string, pass: string): string => {
     return ` ${user} has this pass ${pass} `
 }
 
-let test = testConnection(testUser, testPassword)
+let test = testConnection(Settings.testUser, Settings.testPassword)
 console.log(test)
+
+// instance of class
+let messages = new Messenger(Settings.PORT)
 
 // mongoose connection
 mongoose.connect(database);
@@ -32,9 +32,9 @@ routes(app);
 app.use(express.static('public'));
 
 app.get('/', (req, res) =>
-    res.send(`Node and express server is running on port ${PORT}`)
+    res.send(messages.messagePrint())
 );
 
-app.listen(PORT, () =>
-    console.log(`your server is running on port ${PORT}`)
+app.listen(Settings.PORT, () =>
+    console.log(messages.messagePrint())
 );
