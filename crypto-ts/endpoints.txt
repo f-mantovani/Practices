@@ -1,0 +1,9 @@
+Coin List => don't return the live prices
+http://api.coinlayer.com/list?access_key=f083a716d840efa7fb96dc41fe26fbb2
+
+Live => return the prices of cryptocurrency
+http://api.coinlayer.com/live?access_key = YOUR_ACCESS_KEY
+
+
+Historical => return prices in set date
+http://api.coinlayer.com/2018-04-30?access_key = YOUR_ACCESS_KEY
