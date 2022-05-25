@@ -1,0 +1,18 @@
+.header__Buttons > div {
+  max-width: 30%;
+  padding: 0 .5em;
+  margin: 0 auto; 
+  border: 1px solid #F1F1F1;
+}
+
+.header__Buttons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.header__Buttons div:nth-child(2) {
+  color: white;
+  background-color: #900;
+}
