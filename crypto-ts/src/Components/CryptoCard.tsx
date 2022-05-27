@@ -3,12 +3,12 @@ import './CryptoCard.css'
 
 type Props = {
   name?: string;
-  symbol?: string;
+  ticker?: string;
   icon_url?: string;
   rate?: number;
 }
 
-const CryptoCard: FC<Props> = () => {
+const CryptoCard: FC<Props> = ({name, ticker, icon_url, rate}) => {
   return (
     <div className='cryptoCard'>
 
