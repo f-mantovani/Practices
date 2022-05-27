@@ -11,10 +11,10 @@ const TodoTask = ({ task, completeTask }: Props) => {
     <div className='taskCard'>
       <div className="taskContent">
         <span>
-          {task.taskName}
+          Title: {task.taskName}
         </span>
         <span>
-          {task.deadline} days
+           {task.deadline} days left
         </span>
       </div>
       <button onClick={() => completeTask(task.taskName)}> X </button>
