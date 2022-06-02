@@ -1,24 +1,24 @@
 import { FC } from 'react'
 import './CryptoCard.css'
+import { ICrypto } from '../Interfaces'
 
 type Props = {
-  name?: string;
-  ticker?: string;
-  icon_url?: string;
-  rate?: number;
+  symbol: string
+  name: string
+  icon_url: string
 }
 
-const CryptoCard: FC<Props> = ({name, ticker, icon_url, rate}) => {
+const CryptoCard: FC<Props> = ({ symbol, name, icon_url }) => {
   return (
     <div className='cryptoCard'>
 
       <div className='cryptoCard__container'>
         <div className="cryptoCard__info">
-          <img src='...' alt='...' />
-          <h3> Nome da crypto </h3>
+          <img src={icon_url} alt='...' />
+          <h3> {name} </h3>
         </div>
 
-        <h4> Símbolo </h4>
+        <h4> {symbol} </h4>
 
         <h4> Valor do trade </h4>
       </div>
